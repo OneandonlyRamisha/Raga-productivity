@@ -1,0 +1,94 @@
+.sign-up-section {
+  background-color: var(--bg);
+  min-height: 100vh;
+  padding-left: 0;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding: 5rem 0;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.sign-nav .nav-item {
+  padding-bottom: 0;
+}
+
+.sign-up-section-container {
+  background-color: var(--bg);
+  box-shadow: 0 0px 11px rgba(0, 241, 241, 0.3),
+    /* Enhanced primary glow */ 0 3px 8px rgba(0, 0, 0, 0.9),
+    /* Slightly deeper dark shadow */ 0 12px 25px rgba(24, 25, 27, 0.8),
+    /* More pronounced deep shadow */ 0 -3px 6px rgba(255, 204, 0, 0.3); /* Stronger accent glow */
+  border-radius: 0.9rem;
+  padding: 3rem 4.5rem;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  width: 60rem;
+}
+
+.sign-up-section-container:hover {
+  box-shadow: 0 0px 30px rgba(0, 241, 241, 0.3),
+    /* Enhanced primary glow */ 0 3px 8px rgba(0, 0, 0, 0.9),
+    /* Slightly deeper dark shadow */ 0 12px 25px rgba(24, 25, 27, 0.8),
+    /* More pronounced deep shadow */ 0 -3px 6px rgba(255, 204, 0, 0.3); /* Stronger accent glow */
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sign-logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.submit-form-cta {
+  margin-top: 2rem;
+}
+
+.sign-up-header {
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-item label {
+  color: #7a7d84;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.form-item input {
+  /* background-color: var(--section-bg); */
+  background: #0f0e11;
+  caret-color: var(--txt);
+  outline: none;
+  color: var(--txt);
+  border: 1px solid #333;
+
+  padding: 1.05rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.already-have-an-account-container {
+  text-align: center;
+}
+
+.already-account {
+  font-size: 1.5rem;
+}

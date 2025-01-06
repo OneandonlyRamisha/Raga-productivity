@@ -1,0 +1,39 @@
+.cta {
+  padding: 1.2rem 3.6rem;
+  font-weight: 600;
+
+  color: var(--txt);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 11rem;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  background-image: linear-gradient(
+    to right,
+    #005757,
+    #00a9a9,
+    #00cccc,
+    #00b3b3
+  );
+  box-shadow: 0 4px 15px 0 rgba(0, 241, 241, 0.75);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  /* background-color: #fff;
+      color: #00a9e0; */
+
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

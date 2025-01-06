@@ -1,0 +1,56 @@
+:root {
+  --bg: #010104;
+  --section-bg: #18191b;
+  --txt: #f5f5f5;
+  --primary: #00f1f1;
+  --accent: #ffcc00;
+  --cta-gradiant: linear-gradient(135deg, #007171, #00f1f1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--txt);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--txt);
+}
+
+p {
+  color: var(--txt);
+}
+
+li {
+  list-style: none;
+  font-weight: 500;
+  color: var(--txt);
+}
+
+section {
+  padding-left: 14.4rem;
+  padding-right: 14.4rem;
+}
+
+.error-messages {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
