@@ -36,7 +36,7 @@ export default function SignIn() {
       </div>
       <div className="already-have-an-account-container">
         <p className="already-account">
-          Don't have an account? <Link to="sign up">Sign Up</Link>
+          Don't have an account? <Link to="/sign up">Sign Up</Link>
         </p>
       </div>
     </section>

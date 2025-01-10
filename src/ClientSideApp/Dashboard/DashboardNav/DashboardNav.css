@@ -1,0 +1,52 @@
+.logo-dashboard {
+  text-align: center;
+  padding: 0.8rem;
+  position: fixed;
+  background-color: var(--section-bg);
+
+  text-transform: uppercase;
+  font-size: 1.8rem;
+
+  width: 100%;
+
+  font-weight: 400;
+  letter-spacing: 11px;
+}
+/* .nav-active {
+    background-color: #121212;
+  } */
+
+.dashboard-navigation {
+  height: 100vh;
+  /* border-right: 1px solid #fff; */
+  width: auto;
+  position: fixed;
+  top: 30px;
+  background-color: var(--section-bg);
+}
+
+.dashboard-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dashboard-navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-navigation-list li {
+  padding: 1.8rem 1.2rem;
+}
+
+.dashboard-icons {
+  font-size: 2.4rem;
+  color: #fff;
+
+  opacity: 15%;
+  transition: all 1s;
+}
+
+.activeDashboard {
+  opacity: 100%;
+}

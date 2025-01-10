@@ -4,7 +4,7 @@ import "./Navigation.css";
 export default function Navigation() {
   return (
     <header>
-      <nav>
+      <nav className="navigation">
         <ul className="navigation-list">
           <NavItem classN="" name="Pricing" />
           <NavItem classN="" name="About" />
