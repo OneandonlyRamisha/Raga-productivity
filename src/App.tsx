@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import HeroSection from "./HeroSection/HeroSection";
 import Navigation from "./Navigation/Navigation";

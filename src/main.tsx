@@ -6,7 +6,8 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import SignUp from "./SignUp/SignUp.tsx";
 import SignIn from "./SignIn/SignIn.tsx";
 import Dashboard from "./ClientSideApp/Dashboard/Dashboard.tsx";
-import ProjectTracker from "./ClientSideApp/ProjectsTracker/ProjectTracker.tsx";
+import ProjectTracker from "./ClientSideApp/ProjectsTracker/ProjectTracker.js";
+import PrivateRoute from "../src/ClientSideApp/PrivateRoute.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Dashboard />,
+    element: <PrivateRoute element={<Dashboard />} />,
   },
   {
     path: "/projectTraker",

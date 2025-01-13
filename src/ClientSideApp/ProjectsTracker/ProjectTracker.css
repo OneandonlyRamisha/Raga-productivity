@@ -1,0 +1,83 @@
+.project-tracker-section {
+  padding-left: 0;
+  padding-right: 0;
+  width: 65%;
+  margin: 4rem auto;
+}
+
+.project-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-tracker-search {
+  color: var(--txt);
+  width: 60%;
+}
+
+.project-tracker-dropdown {
+  width: 2%;
+}
+
+.button-project-add {
+  padding: 1.2rem 3.6rem;
+  font-weight: 600;
+  border: none;
+
+  color: var(--txt);
+  cursor: pointer;
+  background: none;
+  background-size: 300% 100%;
+  border-radius: 11rem;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  background-image: linear-gradient(
+    to right,
+    #005757,
+    #00a9a9,
+    #00cccc,
+    #00b3b3
+  );
+  font-weight: 600;
+}
+
+.project-tracker-search {
+  padding: 1.2rem 3.6rem;
+  background-color: var(--section-bg);
+  caret-color: var(--txt);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.project-tracker-search:focus,
+.project-tracker-dropdown:focus {
+  outline: none;
+  border-color: #4caf50; /* Change border color */
+  box-shadow: 0 0 5px var(--primary); /* Add a shadow */
+}
+
+.project-tracker-dropdown {
+  padding: 1.2rem 3.6rem;
+  width: 20%;
+  border-radius: 0.3rem;
+  color: gray;
+  appearance: none;
+  border: none;
+  background-color: var(--section-bg);
+  box-shadow: none;
+}
+
+.project-tracker-dropdown option {
+  border: none;
+  outline: none;
+}
+
+.project-body-container {
+  margin-top: 4rem;
+  min-height: 100vh;
+  /* background-color: red; */
+}

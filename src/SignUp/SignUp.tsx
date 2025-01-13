@@ -58,7 +58,7 @@ export default function SignUp() {
     repeatPassword: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target; // Get input field's name and value
     setSignUpData((prevData) => ({
       ...prevData, // Keep other fields unchanged
@@ -66,15 +66,47 @@ export default function SignUp() {
     }));
   };
 
-  function handleSubmit(e) {
+  function handleSubmit(e: any) {
     e.preventDefault();
+    const userSignUpData = {
+      name: signUpData.name,
+      userName: signUpData.userName,
+      email: signUpData.email,
+      password: signUpData.password,
+    };
     console.log(signUpData);
-    if (signUpData.password !== signUpData.repeatPassword) {
+    if (signUpData.password === signUpData.repeatPassword) {
       console.log("a");
+      handleSignUpData(userSignUpData);
     } else {
       console.log("ads");
     }
   }
+
+  const handleSignUpData = async (pra: any) => {
+    try {
+      const res = await fetch(
+        "https://raga-project-management-api.onrender.com/api/user/sign-up",
+        {
+          method: "POST", // This tells fetch we're doing a POST request
+          headers: {
+            "Content-Type": "application/json", // We are sending JSON data
+          },
+          body: JSON.stringify(pra),
+        }
+      );
+
+      if (res.ok) {
+        const sighUpResult = await res.json();
+        window.location.href = "/home";
+        console.log(sighUpResult);
+      } else {
+        console.log("error");
+      }
+    } catch (err) {
+      console.log("araaa");
+    }
+  };
 
   return (
     <>
